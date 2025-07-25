@@ -1,6 +1,6 @@
 ﻿using MinimalEndpoints.Abstractions;
 
-namespace MinimalEndpoints.Endpoints;
+namespace MinimalEndpoints.Sample.Endpoints;
 
 public class Put : IEndpoint
 {

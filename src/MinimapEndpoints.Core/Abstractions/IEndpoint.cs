@@ -1,4 +1,6 @@
-﻿namespace MinimalEndpoints.Abstractions;
+﻿using Microsoft.AspNetCore.Routing;
+
+namespace MinimalEndpoints.Abstractions;
 
 public interface IEndpoint
 {

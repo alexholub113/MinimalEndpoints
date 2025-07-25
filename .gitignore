@@ -270,3 +270,4 @@ FakesAssemblies/
 *.opt
 
 .aws-sam/
+.fake
