@@ -7,17 +7,42 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>MinimalEndpoints</PackageId>
     <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <Authors>Alex Holub</Authors>
-    <Description>A lightweight library for organizing minimal API endpoints in ASP.NET Core</Description>
-    <PackageTags>aspnetcore;minimal-api;endpoints</PackageTags>
+    <Company>Alex Holub</Company>
+    <Product>MinimalEndpoints</Product>
+    <Description>A lightweight library for organizing ASP.NET Core Minimal API endpoints using a clean, class-based approach. Provides simple abstractions for endpoint organization with automatic discovery and registration.</Description>
+    <Summary>Organize ASP.NET Core Minimal API endpoints with clean, class-based architecture</Summary>
+    <PackageTags>aspnetcore;minimal-api;endpoints;dotnet;csharp;api;rest;clean-architecture</PackageTags>
     <PackageProjectUrl>https://github.com/alexholub113/MinimalEndpoints</PackageProjectUrl>
     <RepositoryUrl>https://github.com/alexholub113/MinimalEndpoints</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>Copyright © Alex Holub 2024</Copyright>
+    <PackageReleaseNotes>Initial release of MinimalEndpoints library featuring:
+- IEndpoint interface for clean endpoint organization
+- Automatic endpoint discovery and registration
+- Support for API versioning
+- Integration with Swagger/OpenAPI
+- .NET 9 and C# 13 support</PackageReleaseNotes>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" Condition="Exists('icon.png')" />
   </ItemGroup>
 
 </Project>
