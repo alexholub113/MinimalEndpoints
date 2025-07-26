@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>MinimalEndpoints</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Alex Holub</Authors>
+    <Description>A lightweight library for organizing minimal API endpoints in ASP.NET Core</Description>
+    <PackageTags>aspnetcore;minimal-api;endpoints</PackageTags>
+    <PackageProjectUrl>https://github.com/alexholub113/MinimalEndpoints</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/alexholub113/MinimalEndpoints</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
+  </ItemGroup>
+
+</Project>

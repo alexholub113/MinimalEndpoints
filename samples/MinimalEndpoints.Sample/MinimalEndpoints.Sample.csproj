@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MinimapEndpoints.Core\MinimalEndpoints.Core.csproj" />
+    <ProjectReference Include="..\..\src\MinimapEndpoints\MinimalEndpoints.csproj" />
   </ItemGroup>
 
 </Project>
